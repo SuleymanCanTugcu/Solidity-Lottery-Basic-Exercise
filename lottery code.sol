@@ -32,7 +32,7 @@ contract Lottery{
         require(msg.sender==admin, "you are not admin");
         require(players.length>=5);
 
-    //Just admin can selet winner
+    //Just admin can select winner
 
     address payable winner;
     winner=players[random()%players.length]; //winner is calculated
